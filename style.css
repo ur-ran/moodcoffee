@@ -1,0 +1,242 @@
+/* Gaya utama dengan nuansa coklat dan putih */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('img/bg5.jpeg') no-repeat center center fixed;
+            background-size: cover;
+    color: #4e342e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #6d4c41;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: rgba(230, 213, 195, 0.7) !important; /* Coklat muda transparan 70% */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.menu-header {
+    background-color: rgba(230, 213, 195, 0.7); /* Coklat muda transparan 70% */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Blend Box jadi Card */
+.blend-box {
+    background: rgba(230, 213, 195, 0.8); /* Coklat muda transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Grid untuk Menu Kopi */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Card Style untuk setiap menu */
+.menu-card {
+    background: rgba(255, 248, 235, 0.9); /* Warna lebih lembut */
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Ukuran gambar kopi */
+.menu-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+/* Tombol submit lebih menarik */
+.btn-primary {
+    background-color: #5a3e2b !important; /* Coklat tua */
+    border-color: #5a3e2b !important;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Hover untuk tombol submit */
+.btn-primary:hover {
+    background-color: #4a2f20 !important; /* Lebih gelap saat hover */
+    border-color: #4a2f20 !important;
+}
+
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #8d6e63;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #5d4037;
+    border-radius: 5px;
+}
+
+/* Container utama */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Card untuk form login */
+.card {
+    background-color: #d7b899;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px auto;
+    text-align: center;
+    color: #4e342e;
+    max-width: 400px;
+}
+
+/* Input field styling */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #8d6e63;
+    border-radius: 5px;
+}
+
+/* Tombol */
+button {
+    background-color: #6d4c41;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+button:hover {
+    background-color: #4e342e;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    margin: 0 5px; /* Menambahkan jarak antar bintang */
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 2000;
+    width: 300px;
+}
+
+.popup-container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.popup-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-container .btn-success {
+    background-color: #198754;
+    color: white;
+}
+
+.popup-container .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.popup-container button:hover {
+    opacity: 0.8;
+}
+
+/* Ubah warna tombol Tambah ke Keranjang */
+.btn-primary.add-to-cart {
+    background-color: #5a3e2b !important; /* Coklat tua */
+    border-color: #5a3e2b !important;
+}
+
+/* Efek hover untuk tombol */
+.btn-primary.add-to-cart:hover {
+    background-color: #4a2f20 !important; /* Lebih gelap saat hover */
+    border-color: #4a2f20 !important;
+}
